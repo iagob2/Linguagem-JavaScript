@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercico 003 do linguagem de javaScript 
+
+    </title>
+
+    <style>
+        body{ 
+            background-color: rgb(83, 83, 156);
+        }
+
+        h1 , p { 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>olá mundo </h1>
+    <p> bem vindo!!!</p> 
+
+    
+    <script>
+        
+       var n1 = Number( prompt('digite um numero:'));//pegar dados
+       var n2 = Number( prompt('digite um numero:'));//pegar dados
+   
+       // Converter as strings de entrada para números antes de somá-las
+       var soma = n1+ n2;
+
+       alert(`A soma do ${n1} com o ${n2} é igual a ${soma}`);
+
+       /*Ao usar a crase (backticks) em torno da string e ${} para inserir variáveis, você cria um template literal em JavaScript. Isso permite que você inclua expressões dentro da string, facilitando a interpolação de variáveis. Note que o código acima assume que n1, n2 e soma são variáveis já definidas em seu script.*/
+
+
+       
+
+       /////converte para numero 
+
+       var numeroInteiro = Number("42"); // Converte a string "42" para o número inteiro 42
+
+      var numeroDecimal = Number("3.14"); // Converte a string "3.14" para o número de ponto flutuante 3.14
+
+      //ou 
+
+      var numInteiro = Number.parseInt("42");// Converte a string "42" para o número inteiro 42
+
+      var numFloat = Number.parseFloat("3.14");// Converte a string "3.14" para o número de ponto flutuante 3.14
+
+     //converte para string 
+
+      var numero = 42;
+      var numeroComoString = String(numero);
+
+      //ou
+
+      var numero = 42;
+      var numeroComoString = numero.toString();
+
+
+
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>
