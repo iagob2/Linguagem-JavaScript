@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condições part 2</title>
+</head>
+<body>
+    <h1>votação:</h1>
+    <p>digite sua idade <input type="number" name="txtid" id="itxtid"></p>
+    <input type="button" value="click"  onclick="votação()">
+    <div id="res"></div>
+
+    <script>
+        function  votação() { 
+            var idade = Number(document.querySelector('#itxtid').value);
+            var r  = document.querySelector('#res');
+
+            r.innerHTML = `<p>você tem ${idade} anos<p>`;
+            if(idade <16) {
+                 r.innerHTML += '<p><strong> Não vota </strong><p> ';
+            }else if (idade <18 || idade >=65 ){
+               r.innerHTML += '<p><strong> voto opcinal </strong><p> ';
+
+            }else { 
+                r.innerHTML += '<p><strong> vota obrigatorio </strong><p> ';
+
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>
